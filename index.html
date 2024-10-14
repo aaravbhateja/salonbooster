@@ -181,6 +181,28 @@
             }
         }
 
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        .animated-text {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: slideIn 8s linear infinite;
+        }
+
         /* Services Section */
         section {
             padding: 60px 0;
@@ -274,59 +296,27 @@
             background-color: #e64a4a;
         }
 
-        /* Footer Section */
+        /* Footer */
         footer {
             background-color: #1f1f1f;
-            text-align: center;
             padding: 20px 0;
-            color: #ccc;
+            text-align: center;
+            color: white;
         }
 
         footer a {
             color: #ff6b6b;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav ul {
-                flex-direction: column;
-                margin-top: 10px;
-            }
-
-            nav ul li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            .cta {
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-top: 10px;
-            }
-
-            .hero h2 {
-                font-size: 30px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
+            color: #e64a4a;
         }
     </style>
 </head>
 
 <body>
-    <!-- Header Section -->
     <header>
         <div class="container">
             <div class="logo">
@@ -334,80 +324,27 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="cta">
-                <a href="https://wa.me/918302273249" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" class="social-icon">
-                </a>
-                <a href="https://www.instagram.com/salonbooster" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" class="social-icon">
-                </a>
+                <a href="https://www.facebook.com"><img src="https://image.pngaaa.com/614/2526614-middle.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com"><img src="https://image.pngaaa.com/614/2526614-middle.png" alt="Instagram"></a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <div class="hero">
         <div class="hero-overlay">
-            <h2>Boost Your Salon’s Online Presence</h2>
-            <p>Website Design | Social Media Management | Meta Ads</p>
-            <a href="#contact" class="btn">Get Started</a>
+            <h2>We Help Salons Thrive Online</h2>
+            <p class="animated-text">Website Design | Social Media Management | Meta Ads</p>
+            <a href="#services" class="btn">Get Started</a>
         </div>
-    </section>
+    </div>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="container service-container">
-            <div class="service-item">
-                <img src="https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg" alt="Website Design">
-                <h3>Website Design</h3>
-                <p>We create modern, high-converting websites that represent your salon beautifully.</p>
-                <a href="#contact" class="btn-service">Get a Website</a>
-            </div>
-            <div class="service-item">
-                <img src="https://i0.wp.com/www.counting-stars.co.uk/wp-content/uploads/2023/02/Untitled-design-2023-02-20T105751.403.png?resize=400%2C600&ssl=1" alt="Social Media Management">
-                <h3>Social Media Management</h3>
-                <p>We manage your social media profiles to help you engage with your audience effectively.</p>
-                <a href="#contact" class="btn-service">Grow Your Social Media</a>
-            </div>
-            <div class="service-item">
-                <img src="https://adbud.io/wp-content/uploads/2024/03/Skarmavbild-2024-03-19-kl.-15.52.32.png" alt="Meta Ads">
-                <h3>Meta Ads</h3>
-                <p>We create targeted Meta ads to help your salon reach more customers.</p>
-                <a href="#contact" class="btn-service">Boost Your Ads</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Salon Booster Pvt Ltd. All Rights Reserved.</p>
-        <p>Follow us on <a href="https://www.instagram.com/salonbooster">Instagram</a></p>
-    </footer>
-
-    <!-- JavaScript for Header Scroll Effect -->
-    <script>
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.scrollY > 0);
-        });
-    </script>
+    <!-- Other sections here -->
 </body>
 
 </html>
