@@ -127,6 +127,7 @@
         .hero h2 {
             font-size: 50px;
             animation: fadeInDown 1s ease;
+            margin-bottom: 20px; /* Added margin to separate from animated text */
         }
 
         .hero p {
@@ -160,6 +161,7 @@
             font-size: 24px; /* Font size for better visibility */
             color: #ff6b6b; /* Color for the animated text */
             animation: move 10s linear infinite; /* Changed animation */
+            top: 90px; /* Adjust position to avoid overlap */
         }
 
         @keyframes move {
@@ -328,7 +330,7 @@
             }
 
             nav ul li {
-                margin: 10px 0;
+                margin: 5px 0;
             }
 
             .hero h2 {
@@ -336,7 +338,16 @@
             }
 
             .hero p {
-                font-size: 18px;
+                font-size: 16px;
+            }
+
+            .animated-text {
+                font-size: 20px; /* Adjust font size for mobile */
+                top: 70px; /* Adjust position */
+            }
+
+            h2 {
+                font-size: 28px;
             }
         }
     </style>
