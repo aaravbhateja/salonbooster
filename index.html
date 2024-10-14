@@ -31,7 +31,7 @@
         header {
             position: fixed;
             width: 100%;
-            padding: 10px 0; /* Reduced padding for header */
+            padding: 10px 0;
             z-index: 1000;
             transition: background-color 0.3s ease;
             display: flex;
@@ -83,23 +83,27 @@
         }
 
         .cta a {
-            background-color: #ff6b6b; /* Button-like background */
-            border-radius: 5px; /* Rounded corners for button */
-            padding: 5px; /* Padding for button */
-            display: flex; /* Flex for centering icon */
-            justify-content: center; /* Centering icon */
-            align-items: center; /* Centering icon */
-            margin-left: 10px; /* Spacing between icons */
+            background-color: #ff6b6b;
+            border-radius: 5px;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
             transition: background-color 0.3s ease;
+            width: 40px;
+            height: 40px;
+            position: relative;
         }
 
         .cta a img {
-            width: 25px; /* Icon size */
-            height: 25px; /* Icon size */
+            width: 25px; /* Icon size set to 25px */
+            height: 25px;
+            position: absolute;
         }
 
         .cta a:hover {
-            background-color: #e64a4a; /* Darker shade on hover */
+            background-color: #e64a4a;
         }
 
         /* Hero Section Styling */
@@ -115,9 +119,9 @@
         }
 
         .hero-overlay {
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+            background: rgba(0, 0, 0, 0.5);
             padding: 50px;
-            border-radius: 10px; /* Optional: adds rounded corners */
+            border-radius: 10px;
         }
 
         .hero h2 {
@@ -235,8 +239,8 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            margin-top: 10px; /* Added margin to separate buttons from text */
-            display: inline-block; /* Ensures button behaves like a block element */
+            margin-top: 10px;
+            display: inline-block;
         }
 
         .btn-service:hover {
@@ -313,14 +317,6 @@
                 justify-content: flex-start;
                 margin-top: 10px;
             }
-
-            .hero h2 {
-                font-size: 30px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
         }
     </style>
 </head>
@@ -334,52 +330,52 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="cta">
-                <a href="https://wa.me/918302273249" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" class="social-icon">
+                <a href="https://wa.me/8302273249">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
                 </a>
-                <a href="https://www.instagram.com/salonbooster" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" class="social-icon">
+                <a href="https://www.instagram.com/salonbooster/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram">
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <div class="hero">
         <div class="hero-overlay">
-            <h2>Boost Your Salon’s Online Presence</h2>
-            <p>Website Design | Social Media Management | Meta Ads</p>
+            <h2>Your Digital Marketing Partner</h2>
+            <p>We specialize in website design, social media management, and targeted ads for salons.</p>
             <a href="#contact" class="btn">Get Started</a>
         </div>
-    </section>
+    </div>
 
     <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
-        <div class="container service-container">
+        <div class="service-container">
             <div class="service-item">
                 <img src="https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg" alt="Website Design">
                 <h3>Website Design</h3>
-                <p>We create modern, high-converting websites that represent your salon beautifully.</p>
-                <a href="#contact" class="btn-service">Get a Website</a>
+                <p>Beautiful, responsive websites that attract customers and boost your online presence.</p>
+                <a href="#" class="btn-service">Learn More</a>
             </div>
             <div class="service-item">
-                <img src="https://i0.wp.com/www.counting-stars.co.uk/wp-content/uploads/2023/02/Untitled-design-2023-02-20T105751.403.png?resize=400%2C600&ssl=1" alt="Social Media Management">
+                <img src="https://i0.wp.com/www.counting-stars.co.uk/wp-content/uploads/2023/02/Untitled-design-2023-02-20T105751.403.png?resize=400%2C600&ssl=1"
+                    alt="Social Media Management">
                 <h3>Social Media Management</h3>
-                <p>We manage your social media profiles to help you engage with your audience effectively.</p>
-                <a href="#contact" class="btn-service">Grow Your Social Media</a>
+                <p>Engaging content and strategic management for your salon's social media profiles.</p>
+                <a href="#" class="btn-service">Learn More</a>
             </div>
             <div class="service-item">
                 <img src="https://adbud.io/wp-content/uploads/2024/03/Skarmavbild-2024-03-19-kl.-15.52.32.png" alt="Meta Ads">
-                <h3>Meta Ads</h3>
-                <p>We create targeted Meta ads to help your salon reach more customers.</p>
-                <a href="#contact" class="btn-service">Boost Your Ads</a>
+                <h3>Targeted Ads</h3>
+                <p>Reach your ideal customers with tailored advertising strategies.</p>
+                <a href="#" class="btn-service">Learn More</a>
             </div>
         </div>
     </section>
@@ -397,16 +393,23 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Salon Booster Pvt Ltd. All Rights Reserved.</p>
-        <p>Follow us on <a href="https://www.instagram.com/salonbooster">Instagram</a></p>
+        <p>&copy; 2024 Salon Booster Pvt Ltd. All rights reserved.</p>
+        <p>Follow us on
+            <a href="https://wa.me/8302273249">WhatsApp</a> and
+            <a href="https://www.instagram.com/salonbooster/">Instagram</a>.
+        </p>
     </footer>
 
-    <!-- JavaScript for Header Scroll Effect -->
     <script>
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('header');
-            header.classList.toggle('scrolled', window.scrollY > 0);
-        });
+        // Change header style on scroll
+        window.onscroll = function () {
+            var header = document.querySelector('header');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
     </script>
 </body>
 
