@@ -150,6 +150,26 @@
             background-color: #e64a4a;
         }
 
+        /* Animated Text */
+        .animated-text {
+            overflow: hidden; /* Ensures no overflow */
+            white-space: nowrap; /* Prevents text from wrapping */
+            box-sizing: border-box;
+            width: 100%; /* Full width */
+            position: relative;
+            animation: marquee 10s linear infinite;
+            margin: 20px 0; /* Adds space around the animated text */
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
         /* Animations */
         @keyframes fadeInDown {
             from {
@@ -322,6 +342,7 @@
 </head>
 
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="container">
@@ -349,6 +370,7 @@
     <div class="hero">
         <div class="hero-overlay">
             <h2>Your Digital Marketing Partner</h2>
+            <p class="animated-text">Website Design | Social Media Management | Meta Ads</p>
             <p>We specialize in website design, social media management, and targeted ads for salons.</p>
             <a href="#contact" class="btn">Get Started</a>
         </div>
