@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Salon Booster Pvt Ltd</title>
+    <title>Salon Booster Pvt Ltd - Digital Marketing Agency</title>
 
-    <!-- Font Awesome Icons for WhatsApp and Instagram -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons for Social Media -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <!-- Inline CSS for styling -->
+    <!-- Inline CSS for modern styling -->
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            background-color: #1a1a1a; /* Dark background */
-            color: #f4f4f4; /* Light text color */
+            background: #181818;
+            color: #fff;
         }
 
-        /* Header and Navigation */
+        /* Header Styling */
         header {
-            background-color: #333; /* Dark header */
-            color: white;
-            padding: 15px 0;
-            position: relative;
+            background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
         }
 
-        header .logo h1 {
+        .logo h1 {
             font-size: 28px;
+            color: #fff;
         }
 
         nav ul {
             list-style: none;
+            display: flex;
         }
 
         nav ul li {
-            display: inline-block;
             margin-left: 20px;
         }
 
         nav ul li a {
-            color: #f4f4f4;
             text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
+            color: #fff;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
 
         nav ul li a:hover {
-            color: #ff6b6b; /* Highlight color */
+            color: #ff6b6b;
         }
 
-        /* CTA Buttons */
+        /* CTA and Social Icons */
         .cta {
             display: flex;
             align-items: center;
         }
 
         .cta a {
-            color: white;
             text-decoration: none;
+            color: white;
             background-color: #ff6b6b;
-            padding: 8px 12px;
+            padding: 8px 15px;
             border-radius: 5px;
+            font-weight: 600;
             margin-left: 15px;
-            transition: 0.3s;
+            transition: background-color 0.3s ease;
         }
 
-        .cta .social {
-            display: flex;
-            margin-left: 15px;
+        .cta a:hover {
+            background-color: #e64a4a;
         }
 
         .cta .social a {
-            background-color: transparent;
-            border: none;
-            margin-left: 5px;
             color: white;
-            padding: 10px;
-            border-radius: 5px;
-            transition: 0.3s;
+            margin-left: 10px;
+            font-size: 1.8em;
+            transition: color 0.3s ease;
         }
 
         .cta .social a:hover {
-            background-color: #ff6b6b; /* Highlight color */
+            color: #ff6b6b;
         }
 
-        /* Hero Section */
+        /* Hero Section Styling */
         .hero {
-            background-image: url('https://images.unsplash.com/photo-1598525097987-e52db0b59393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg4NzN8MHwxfGFsbHwxfHx8fHx8fHwxNjEzMjQ5MTc2&ixlib=rb-1.2.1&q=80&w=1600'); /* Hero Background image */
-            background-size: cover;
-            background-position: center;
+            background: url('https://images.unsplash.com/photo-1604321715373-45ed919dbf43') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            padding: 150px 0;
             color: white;
         }
 
         .hero h2 {
-            font-size: 42px;
+            font-size: 48px;
             margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 22px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .hero .btn {
@@ -124,11 +127,11 @@
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
-            transition: 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .hero .btn:hover {
-            background-color: #333;
+            background-color: #e64a4a;
         }
 
         /* Services Section */
@@ -139,104 +142,111 @@
 
         h2 {
             font-size: 32px;
+            color: #ff6b6b;
             margin-bottom: 30px;
-            color: #ff6b6b; /* Highlight color */
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
         .service-item {
-            background-color: #222; /* Darker service items */
-            margin-bottom: 30px;
+            background: #242424;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            transition: 0.3s;
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
 
         .service-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
         }
 
         .service-item img {
             max-width: 100%;
             height: 200px;
-            border-radius: 5px;
+            border-radius: 10px;
         }
 
         .service-item h3 {
-            font-size: 24px;
             margin: 15px 0;
-            color: #ff6b6b; /* Highlight color */
+            color: #ff6b6b;
         }
 
         .service-item p {
-            font-size: 16px;
-            color: #ccc; /* Lighter text color */
+            color: #ccc;
         }
 
         .btn-service {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background-color: #ff6b6b; /* Highlight color */
+            background-color: #ff6b6b;
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            transition: 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .btn-service:hover {
-            background-color: #333; /* Darker on hover */
+            background-color: #e64a4a;
         }
 
         /* Contact Section */
+        #contact {
+            background: #2a2a2a;
+            padding: 50px 0;
+        }
+
         #contact-form input, #contact-form textarea {
             width: 100%;
             padding: 15px;
             margin: 10px 0;
-            border: 1px solid #555; /* Dark border */
+            background: #333;
+            border: none;
             border-radius: 5px;
-            background-color: #333; /* Dark background */
-            color: white; /* Light text color */
+            color: white;
         }
 
         #contact-form button {
             padding: 15px 30px;
-            background-color: #ff6b6b; /* Highlight color */
+            background-color: #ff6b6b;
             color: white;
             border: none;
             cursor: pointer;
             border-radius: 5px;
             font-size: 18px;
-            transition: 0.3s;
-        }
-
-        #contact-form button:hover {
-            background-color: #333; /* Darker on hover */
         }
 
         /* Footer */
         footer {
-            background-color: #222; /* Dark footer */
-            color: white;
+            background-color: #181818;
             padding: 20px 0;
             text-align: center;
         }
 
+        footer p {
+            margin: 5px 0;
+        }
+
         footer a {
-            color: #ff6b6b; /* Highlight color */
-            text-decoration: none;
+            color: #ff6b6b;
         }
 
         footer a:hover {
-            color: white; /* White on hover */
+            color: white;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Salon Booster Pvt Ltd</h1>
+                <h1>Salon Booster</h1>
             </div>
             <nav>
                 <ul>
@@ -248,49 +258,46 @@
                 </ul>
             </nav>
             <div class="cta">
-                <a href="tel:+918302273249" class="call-btn">Call us: +91 8302273249</a>
+                <a href="tel:+918302273249">Call Us</a>
                 <div class="social">
                     <a href="https://wa.me/918302273249" target="_blank">
-                        <i class="fab fa-whatsapp fa-2x"></i>
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                     <a href="https://www.instagram.com/salonbooster" target="_blank">
-                        <i class="fab fa-instagram fa-2x"></i>
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="home">
-        <div class="hero">
-            <h2>Boost Your Salon’s Online Presence</h2>
-            <p>Get custom websites, social media management, and Meta Ads to grow your salon business.</p>
-            <a href="#contact" class="btn">Get a Free Consultation</a>
-        </div>
+    <section class="hero" id="home">
+        <h2>Transform Your Salon's Online Presence</h2>
+        <p>Get cutting-edge digital marketing solutions to boost your brand visibility and clientele.</p>
+        <a href="#contact" class="btn">Get a Free Consultation</a>
     </section>
 
     <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-
+        <h2>Our Services</h2>
+        <div class="service-container">
             <div class="service-item">
                 <img src="https://images.unsplash.com/photo-1581291518821-18b9e4f0a90b" alt="Website Design">
                 <h3>Website Design</h3>
-                <p>Custom-designed websites tailored for salons to attract and retain clients.</p>
+                <p>Get a custom-designed website to enhance your salon’s digital footprint and attract more clients.</p>
                 <a href="#contact" class="btn-service">Get a Quote</a>
             </div>
 
             <div class="service-item">
                 <img src="https://images.unsplash.com/photo-1603466917514-912ef6467450" alt="Social Media Management">
                 <h3>Social Media Management</h3>
-                <p>Let us handle your social media and engage with customers on platforms like Instagram.</p>
+                <p>Let us manage your social media channels to engage your audience and grow your following.</p>
                 <a href="#contact" class="btn-service">Manage My Socials</a>
             </div>
 
             <div class="service-item">
                 <img src="https://images.unsplash.com/photo-1604321715373-45ed919dbf43" alt="Meta Ads">
                 <h3>Meta Ads</h3>
-                <p>Boost your salon’s visibility with highly targeted Meta Ads.</p>
+                <p>Boost your salon’s visibility with highly targeted Meta Ads for greater client acquisition.</p>
                 <a href="#contact" class="btn-service">Launch Ads</a>
             </div>
         </div>
@@ -312,37 +319,21 @@
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Salon Booster Pvt Ltd | All rights reserved.</p>
-            <p>Follow us on Instagram: <a href="https://www.instagram.com/salonbooster" target="_blank">@salonbooster</a></p>
-        </div>
+        <p>&copy; 2024 Salon Booster Pvt Ltd | All rights reserved.</p>
+        <p>Follow us on <a href="https://www.instagram.com/salonbooster" target="_blank">Instagram</a></p>
     </footer>
 
-    <!-- Inline JavaScript for functionality -->
+    <!-- Inline JavaScript for form handling -->
     <script>
-        // Contact form submission handling
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
-            
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-
-            alert(`Thank you, ${name}! We have received your message. We will get back to you at ${email} shortly.`);
-            
-            // Clear the form fields after submission
+            alert(`Thank you, ${name}! We have received your message and will get back to you at ${email}.`);
             document.getElementById('contact-form').reset();
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(event) {
-                event.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
         });
     </script>
 </body>
+
 </html>
