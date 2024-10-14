@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Salon Booster Pvt Ltd</title>
 
+    <!-- Font Awesome Icons for WhatsApp and Instagram -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <!-- Inline CSS for styling -->
     <style>
         * {
@@ -80,9 +83,24 @@
             color: #fff;
         }
 
+        .cta .social a {
+            margin-left: 10px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cta .social a i {
+            margin-right: 5px;
+        }
+
+        .cta .social a:hover {
+            color: #ff6b6b;
+        }
+
         /* Hero Section */
         .hero {
-            background-image: url('https://via.placeholder.com/1600x900'); /* Placeholder image */
+            background-image: url('https://images.unsplash.com/photo-1598525097987-e52db0b59393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg4NzN8MHwxfGFsbHwxfHx8fHx8fHwxNjEzMjQ5MTc2&ixlib=rb-1.2.1&q=80&w=1600'); /* Background image */
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -229,7 +247,14 @@
             </nav>
             <div class="cta">
                 <a href="tel:+918302273249">Call us: +91 8302273249</a>
-                <a href="https://wa.me/918302273249" target="_blank">WhatsApp</a>
+                <div class="social">
+                    <a href="https://wa.me/918302273249" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/salonbooster" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -247,21 +272,21 @@
             <h2>Our Services</h2>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/400x300" alt="Website Design">
+                <img src="https://images.unsplash.com/photo-1581291518821-18b9e4f0a90b" alt="Website Design">
                 <h3>Website Design</h3>
                 <p>Custom-designed websites tailored for salons to attract and retain clients.</p>
                 <a href="#contact" class="btn-service">Get a Quote</a>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/400x300" alt="Social Media Management">
+                <img src="https://images.unsplash.com/photo-1603466917514-912ef6467450" alt="Social Media Management">
                 <h3>Social Media Management</h3>
                 <p>Let us handle your social media and engage with customers on platforms like Instagram.</p>
                 <a href="#contact" class="btn-service">Start Managing</a>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/400x300" alt="Meta Ads">
+                <img src="https://images.unsplash.com/photo-1513104972531-3b60c7f3b0e3" alt="Meta Ads">
                 <h3>Meta Ads</h3>
                 <p>Boost your salon’s visibility with highly targeted Meta Ads.</p>
                 <a href="#contact" class="btn-service">Launch Ads</a>
@@ -319,3 +344,4 @@
     </script>
 </body>
 </html>
+
