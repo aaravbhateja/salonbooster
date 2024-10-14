@@ -83,29 +83,23 @@
         }
 
         .cta a {
-            text-decoration: none;
-            color: white;
-            background-color: #ff6b6b;
-            padding: 8px 15px;
-            border-radius: 5px;
-            font-weight: 600;
-            margin-left: 15px;
+            background-color: #ff6b6b; /* Button-like background */
+            border-radius: 5px; /* Rounded corners for button */
+            padding: 5px; /* Padding for button */
+            display: flex; /* Flex for centering icon */
+            justify-content: center; /* Centering icon */
+            align-items: center; /* Centering icon */
+            margin-left: 10px; /* Spacing between icons */
             transition: background-color 0.3s ease;
         }
 
+        .cta a img {
+            width: 25px; /* Icon size */
+            height: 25px; /* Icon size */
+        }
+
         .cta a:hover {
-            background-color: #e64a4a;
-        }
-
-        .cta .social img {
-            width: 25px; /* Reduced size for the icons */
-            height: 25px; /* Reduced size for the icons */
-            margin-left: 10px; /* Adjusted margin */
-            transition: transform 0.3s ease;
-        }
-
-        .cta .social img:hover {
-            transform: scale(1.1);
+            background-color: #e64a4a; /* Darker shade on hover */
         }
 
         /* Hero Section Styling */
