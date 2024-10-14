@@ -319,7 +319,6 @@
     <div class="hero">
         <div class="hero-overlay">
             <h2>Your Digital Marketing Partner</h2>
-            <p>Website Design | Social Media Management | Meta Ads</p>
             <p>We specialize in website design, social media management, and targeted ads for salons.</p>
             <a href="#contact" class="btn">Get Started</a>
         </div>
@@ -353,10 +352,10 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form id="contact-form" action="https://formspree.io/f/myzyyjel" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
