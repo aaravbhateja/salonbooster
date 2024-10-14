@@ -155,7 +155,7 @@
             overflow: hidden; /* Ensures no overflow */
             white-space: nowrap; /* Prevents text from wrapping */
             box-sizing: border-box;
-            position: relative;
+            position: absolute; /* Change to absolute for better positioning */
             width: 100%; /* Full width */
             font-size: 24px; /* Font size for better visibility */
             color: #ff6b6b; /* Color for the animated text */
@@ -192,7 +192,6 @@
 
             to {
                 opacity: 1;
-                transform: translateY(0);
             }
         }
 
