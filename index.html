@@ -13,7 +13,7 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-    <!-- Inline CSS for Advanced Professional Styling -->
+    <!-- Inline CSS for Styling -->
     <style>
         * {
             margin: 0;
@@ -94,15 +94,15 @@
             background-color: #e64a4a;
         }
 
-        .cta .social a {
-            color: white;
+        .cta .social img {
+            width: 35px;
+            height: 35px;
             margin-left: 15px;
-            font-size: 1.8em;
-            transition: color 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
-        .cta .social a:hover {
-            color: #ff6b6b;
+        .cta .social img:hover {
+            transform: scale(1.1);
         }
 
         /* Hero Section Styling */
@@ -311,8 +311,8 @@
             </nav>
             <div class="cta">
                 <a href="tel:8302273249">Call Us</a>
-                <a href="https://wa.me/8302273249" target="_blank" class="social"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/salonbooster" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/8302273249" target="_blank" class="social"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/salonbooster" target="_blank" class="social"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram"></a>
             </div>
         </div>
     </header>
@@ -343,7 +343,7 @@
                 <a href="#contact" class="btn-service">Grow Your Social Media</a>
             </div>
             <div class="service-item">
-                <img src="https://images.unsplash.com/photo-1512871939666-78618dcfc7ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJhc2tlZCUyMG1hbmFnaWV8ZW58MHx8fHwxNjgyMjU5MjY5&ixlib=rb-4.0.3&q=80&w=1920" alt="Meta Ads">
+                <img src="https://adbud.io/wp-content/uploads/2024/03/Skarmavbild-2024-03-19-kl.-15.52.32.png" alt="Meta Ads">
                 <h3>Meta Ads</h3>
                 <p>We create targeted Meta ads to help your salon reach more customers.</p>
                 <a href="#contact" class="btn-service">Boost Your Ads</a>
@@ -367,6 +367,14 @@
         <p>&copy; 2024 Salon Booster Pvt Ltd. All Rights Reserved.</p>
         <p>Follow us on <a href="https://www.instagram.com/salonbooster">Instagram</a></p>
     </footer>
+
+    <!-- JavaScript for Header Scroll Effect -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>
