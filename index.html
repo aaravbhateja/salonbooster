@@ -24,19 +24,23 @@
         header {
             background-color: #ff6b6b;
             color: white;
-            padding: 20px 0;
+            padding: 15px 0;
+            position: relative;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
         }
 
         header .logo h1 {
-            display: inline-block;
             font-size: 28px;
-            margin-left: 20px;
         }
 
         nav ul {
             list-style: none;
-            float: right;
-            margin-right: 20px;
         }
 
         nav ul li {
@@ -55,18 +59,30 @@
             color: #333;
         }
 
+        /* CTA Buttons */
+        .cta {
+            display: flex;
+            align-items: center;
+        }
+
         .cta a {
             color: white;
             text-decoration: none;
-            margin-left: 15px;
             background-color: #333;
             padding: 8px 12px;
             border-radius: 5px;
+            margin-left: 15px;
+            transition: 0.3s;
+        }
+
+        .cta a:hover {
+            background-color: #ff6b6b;
+            color: #fff;
         }
 
         /* Hero Section */
         .hero {
-            background-image: url('https://source.unsplash.com/1600x900/?salon'); /* Placeholder salon image */
+            background-image: url('https://via.placeholder.com/1600x900'); /* Placeholder image */
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -194,7 +210,6 @@
         footer a:hover {
             color: white;
         }
-
     </style>
 </head>
 <body>
@@ -232,21 +247,21 @@
             <h2>Our Services</h2>
 
             <div class="service-item">
-                <img src="https://source.unsplash.com/400x300/?webdesign" alt="Website Design">
+                <img src="https://via.placeholder.com/400x300" alt="Website Design">
                 <h3>Website Design</h3>
                 <p>Custom-designed websites tailored for salons to attract and retain clients.</p>
                 <a href="#contact" class="btn-service">Get a Quote</a>
             </div>
 
             <div class="service-item">
-                <img src="https://source.unsplash.com/400x300/?socialmedia" alt="Social Media Management">
+                <img src="https://via.placeholder.com/400x300" alt="Social Media Management">
                 <h3>Social Media Management</h3>
                 <p>Let us handle your social media and engage with customers on platforms like Instagram.</p>
                 <a href="#contact" class="btn-service">Start Managing</a>
             </div>
 
             <div class="service-item">
-                <img src="https://source.unsplash.com/400x300/?ads" alt="Meta Ads">
+                <img src="https://via.placeholder.com/400x300" alt="Meta Ads">
                 <h3>Meta Ads</h3>
                 <p>Boost your salon’s visibility with highly targeted Meta Ads.</p>
                 <a href="#contact" class="btn-service">Launch Ads</a>
