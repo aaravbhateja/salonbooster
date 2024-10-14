@@ -19,13 +19,13 @@
         }
 
         body {
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f4f4f4; /* Light text color */
         }
 
         /* Header and Navigation */
         header {
-            background-color: #ff6b6b;
+            background-color: #333; /* Dark header */
             color: white;
             padding: 15px 0;
             position: relative;
@@ -52,14 +52,14 @@
         }
 
         nav ul li a {
-            color: white;
+            color: #f4f4f4;
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
         }
 
         nav ul li a:hover {
-            color: #333;
+            color: #ff6b6b; /* Highlight color */
         }
 
         /* CTA Buttons */
@@ -71,31 +71,30 @@
         .cta a {
             color: white;
             text-decoration: none;
-            background-color: #333;
+            background-color: #ff6b6b;
             padding: 8px 12px;
             border-radius: 5px;
             margin-left: 15px;
             transition: 0.3s;
         }
 
-        .cta a:hover {
-            background-color: #ff6b6b;
-            color: #fff;
+        .cta .social {
+            display: flex;
+            margin-left: 15px;
         }
 
         .cta .social a {
-            margin-left: 10px;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-        }
-
-        .cta .social a i {
-            margin-right: 5px;
+            background-color: transparent;
+            border: none;
+            margin-left: 5px;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
         .cta .social a:hover {
-            color: #ff6b6b;
+            background-color: #ff6b6b; /* Highlight color */
         }
 
         /* Hero Section */
@@ -141,14 +140,14 @@
         h2 {
             font-size: 32px;
             margin-bottom: 30px;
-            color: #ff6b6b;
+            color: #ff6b6b; /* Highlight color */
         }
 
         .service-item {
-            background-color: white;
+            background-color: #222; /* Darker service items */
             margin-bottom: 30px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 8px;
             transition: 0.3s;
         }
@@ -166,18 +165,19 @@
         .service-item h3 {
             font-size: 24px;
             margin: 15px 0;
+            color: #ff6b6b; /* Highlight color */
         }
 
         .service-item p {
             font-size: 16px;
-            color: #666;
+            color: #ccc; /* Lighter text color */
         }
 
         .btn-service {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
-            background-color: #ff6b6b;
+            background-color: #ff6b6b; /* Highlight color */
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -185,7 +185,7 @@
         }
 
         .btn-service:hover {
-            background-color: #333;
+            background-color: #333; /* Darker on hover */
         }
 
         /* Contact Section */
@@ -193,13 +193,15 @@
             width: 100%;
             padding: 15px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #555; /* Dark border */
             border-radius: 5px;
+            background-color: #333; /* Dark background */
+            color: white; /* Light text color */
         }
 
         #contact-form button {
             padding: 15px 30px;
-            background-color: #ff6b6b;
+            background-color: #ff6b6b; /* Highlight color */
             color: white;
             border: none;
             cursor: pointer;
@@ -209,24 +211,24 @@
         }
 
         #contact-form button:hover {
-            background-color: #333;
+            background-color: #333; /* Darker on hover */
         }
 
         /* Footer */
         footer {
-            background-color: #333;
+            background-color: #222; /* Dark footer */
             color: white;
             padding: 20px 0;
             text-align: center;
         }
 
         footer a {
-            color: #ff6b6b;
+            color: #ff6b6b; /* Highlight color */
             text-decoration: none;
         }
 
         footer a:hover {
-            color: white;
+            color: white; /* White on hover */
         }
     </style>
 </head>
@@ -246,13 +248,13 @@
                 </ul>
             </nav>
             <div class="cta">
-                <a href="tel:+918302273249">Call us: +91 8302273249</a>
+                <a href="tel:+918302273249" class="call-btn">Call us: +91 8302273249</a>
                 <div class="social">
                     <a href="https://wa.me/918302273249" target="_blank">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
+                        <i class="fab fa-whatsapp fa-2x"></i>
                     </a>
                     <a href="https://www.instagram.com/salonbooster" target="_blank">
-                        <i class="fab fa-instagram"></i> Instagram
+                        <i class="fab fa-instagram fa-2x"></i>
                     </a>
                 </div>
             </div>
@@ -286,7 +288,7 @@
             </div>
 
             <div class="service-item">
-                <img src="https://images.unsplash.com/photo-1513104972531-3b60c7f3b0e3" alt="Meta Ads">
+                <img src="https://images.unsplash.com/photo-1604321715373-45ed919dbf43" alt="Meta Ads">
                 <h3>Meta Ads</h3>
                 <p>Boost your salon’s visibility with highly targeted Meta Ads.</p>
                 <a href="#contact" class="btn-service">Launch Ads</a>
@@ -344,4 +346,3 @@
     </script>
 </body>
 </html>
-
