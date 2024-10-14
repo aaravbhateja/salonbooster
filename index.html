@@ -126,14 +126,12 @@
 
         .hero h2 {
             font-size: 50px;
-            animation: fadeInDown 1s ease;
             margin-bottom: 20px; /* Added margin to separate from animated text */
         }
 
         .hero p {
             font-size: 20px;
             margin-bottom: 30px;
-            animation: fadeIn 1.5s ease;
         }
 
         .hero .btn {
@@ -144,67 +142,10 @@
             font-size: 18px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            animation: fadeInUp 1s ease;
         }
 
         .hero .btn:hover {
             background-color: #e64a4a;
-        }
-
-        /* Animated Text */
-        .animated-text {
-            overflow: hidden; /* Ensures no overflow */
-            white-space: nowrap; /* Prevents text from wrapping */
-            box-sizing: border-box;
-            position: absolute; /* Change to absolute for better positioning */
-            width: 100%; /* Full width */
-            font-size: 24px; /* Font size for better visibility */
-            color: #ff6b6b; /* Color for the animated text */
-            animation: move 10s linear infinite; /* Changed animation */
-            top: 90px; /* Adjust position to avoid overlap */
-        }
-
-        @keyframes move {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
         }
 
         /* Services Section */
@@ -341,11 +282,6 @@
                 font-size: 16px;
             }
 
-            .animated-text {
-                font-size: 20px; /* Adjust font size for mobile */
-                top: 70px; /* Adjust position */
-            }
-
             h2 {
                 font-size: 28px;
             }
@@ -383,7 +319,7 @@
     <div class="hero">
         <div class="hero-overlay">
             <h2>Your Digital Marketing Partner</h2>
-            <p class="animated-text">Website Design | Social Media Management | Meta Ads</p>
+            <p>Website Design | Social Media Management | Meta Ads</p>
             <p>We specialize in website design, social media management, and targeted ads for salons.</p>
             <a href="#contact" class="btn">Get Started</a>
         </div>
