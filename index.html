@@ -327,23 +327,25 @@
                 observer.observe(item);
             });
 
-            // Razorpay integration for each button
-            var options = {
-                "key": "your_razorpay_key", // Replace with your Razorpay key
-                "name": "Salon Booster",
-                "description": "Payment for services",
-                "image": "https://your-logo-url-here.com/logo.png",
-                "handler": function (response) {
-                    alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
-                },
-                "prefill": {
-                    "name": "",
-                    "email": ""
-                },
-                "theme": {
-                    "color": "#ff6b6b"
-                }
-            };
+            
+           // Razorpay integration for each button
+var options = {
+    "key": "rzp_test_rUS1Z1D49a0hRh", // Replace with your Razorpay key
+    "name": "Salon Booster",
+    "description": "Payment for services",
+    "image": "https://your-logo-url-here.com/logo.png",
+    "handler": function (response) {
+        alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
+    },
+    "prefill": {
+        "name": "",
+        "email": ""
+    },
+    "theme": {
+        "color": "#ff6b6b"
+    }
+};
+
 
             document.getElementById('pay-website').onclick = function (e) {
                 options.amount = "1000000"; // ₹10,000 in paise
