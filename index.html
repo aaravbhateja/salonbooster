@@ -113,8 +113,11 @@
             transition: background-color 0.3s;
         }
 
+        /* Equal Image Size for All Services */
         .service-item img {
             width: 100%;
+            height: 200px;
+            object-fit: cover;
             border-radius: 10px;
             margin-bottom: 15px;
         }
@@ -154,6 +157,12 @@
             text-align: center;
             color: #ff6b6b;
             font-size: 32px;
+        }
+
+        .contact p {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         .contact form {
@@ -250,6 +259,7 @@
 
     <section class="contact" id="contact">
         <h2>Contact Us</h2>
+        <p>For immediate assistance, call us at: +91 8302273249</p>
         <form action="https://formspree.io/f/myzyyjel" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -257,22 +267,19 @@
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
-        <p>For immediate assistance, call us at: +91 8302273249</p>
     </section>
 
     <footer>
-        &copy; 2024 Salon Booster | All Rights Reserved
+        <p>&copy; 2024 Salon Booster. All rights reserved.</p>
     </footer>
 
     <script>
-        // Razorpay Integration for each service
         var options = {
             "key": "rzp_test_rUS1Z1D49a0hRh",
-            "currency": "INR",
             "name": "Salon Booster",
             "description": "Payment for services",
             "image": "https://example.com/logo.png",
-            "handler": function (response) {
+            "handler": function(response) {
                 alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
             },
             "theme": {
@@ -281,7 +288,7 @@
         };
 
         // Website Design Payment
-        document.getElementById('pay-website').onclick = function (e) {
+        document.getElementById('pay-website').onclick = function(e) {
             options.amount = "50000"; // Example price for website design (₹500)
             var rzp1 = new Razorpay(options);
             rzp1.open();
@@ -289,7 +296,7 @@
         }
 
         // Social Media Management Payment
-        document.getElementById('pay-social-media').onclick = function (e) {
+        document.getElementById('pay-social-media').onclick = function(e) {
             options.amount = "30000"; // Example price for social media management (₹300)
             var rzp1 = new Razorpay(options);
             rzp1.open();
@@ -297,7 +304,7 @@
         }
 
         // Meta Ads Payment
-        document.getElementById('pay-meta-ads').onclick = function (e) {
+        document.getElementById('pay-meta-ads').onclick = function(e) {
             options.amount = "40000"; // Example price for targeted ads (₹400)
             var rzp1 = new Razorpay(options);
             rzp1.open();
