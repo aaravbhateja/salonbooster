@@ -16,42 +16,46 @@
         }
 
         header {
-    background-color: #333; /* Background color for the header */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding around the header */
-    display: flex; /* Flexbox for header alignment */
-    justify-content: space-between; /* Space between elements */
-    align-items: center; /* Center items vertically */
-}
+            background-color: #333; /* Background color for the header */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Padding around the header */
+            display: flex; /* Flexbox for header alignment */
+            justify-content: space-between; /* Space between elements */
+            align-items: center; /* Center items vertically */
+        }
 
-nav ul {
-    list-style: none; /* No bullets */
-    padding: 0; /* No padding */
-    display: flex; /* Flexbox for horizontal alignment */
-    margin: 0; /* No margin */
-}
+        nav ul {
+            list-style: none; /* No bullets */
+            padding: 0; /* No padding */
+            display: flex; /* Flexbox for horizontal alignment */
+            margin: 0; /* No margin */
+        }
 
-nav ul li {
-    margin-left: 20px; /* Space between items */
-}
+        nav ul li {
+            margin-left: 20px; /* Space between items */
+        }
 
-nav ul li a {
-    color: white; /* Link color */
-    text-decoration: none; /* No underline */
-}
+        nav ul li a {
+            color: white; /* Link color */
+            text-decoration: none; /* No underline */
+        }
 
-header h1 {
-    font-size: 24px; /* Adjust header font size */
-    color: #ff6b6b; /* Header color */
-}
+        header h1 {
+            font-size: 24px; /* Adjust header font size */
+            color: #ff6b6b; /* Header color */
+        }
 
-.header-icons img {
-    width: 25px; /* Icon width */
-    height: 25px; /* Icon height */
-    margin-left: 15px; /* Space between icons */
-    cursor: pointer; /* Pointer cursor */
-}
+        .header-icons {
+            display: flex;
+            align-items: center;
+        }
 
+        .header-icons img {
+            width: 25px; /* Icon width */
+            height: 25px; /* Icon height */
+            margin-left: 15px; /* Space between icons */
+            cursor: pointer; /* Pointer cursor */
+        }
 
         /* Hero Section */
         .hero {
@@ -111,8 +115,8 @@ header h1 {
             padding: 20px;
             margin: 15px;
             border-radius: 10px;
-            opacity: 0; /* Start as hidden */
-            transform: translateY(20px); /* Move down for animation */
+            opacity: 1; /* Set visible by default for testing */
+            transform: translateY(0); /* Remove transformation initially */
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
@@ -151,170 +155,105 @@ header h1 {
             background-color: #e64a4a;
         }
 
-        /* Smaller buttons for Meta Ads */
+        /* Updated Meta Ads Buttons */
         .btn-meta {
-            width: 45%;
-            display: inline-block;
-            margin: 10px 2.5%;
-        }
-
-        .btn-meta {
-    margin: 10px 0; /* Space between buttons */
-    padding: 12px 20px; /* Adjusted padding */
-    background-color: #ff6b6b; /* Button color */
-    color: white; /* Text color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%; /* Full width for buttons */
-    max-width: 220px; /* Maximum width */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease;
-}
-
-.btn-meta:hover {
-    background-color: #e55a5a; /* Darker shade on hover */
-}
-
-        .about-us {
-    padding: 40px 20px;
-    text-align: center;
-}
-.about-us h2 {
-    margin-bottom: 20px;
-}
-.about-us p {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-        /* Contact Section */
-        .contact {
-            padding: 50px 20px;
-            background-color: #1f1f1f;
-        }
-
-        .contact h2 {
-            text-align: center;
-            color: #ff6b6b;
-            font-size: 32px;
-        }
-
-        .contact p {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact form input,
-        .contact form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #333;
-            border-radius: 5px;
-            background-color: #333;
-            color: white;
-            font-size: 16px;
-        }
-
-        .contact form button {
-            width: 100%;
-            background-color: #ff6b6b;
-            padding: 10px;
+            background-color: #ff6b6b; /* Same color as other buttons */
+            padding: 10px 20px;
             border: none;
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s;
+            margin-top: 10px;
         }
 
-        .contact form button:hover {
+        .btn-meta:hover {
             background-color: #e64a4a;
         }
-
-        /* Footer */
-        footer {
-            padding: 20px;
-            background-color: #1f1f1f;
-            text-align: center;
-            font-size: 16px;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .service-container {
-                flex-direction: column; /* Stack services vertically */
-                align-items: center;
-            }
-
-            .service-item {
-                width: 90%; /* Full width for mobile */
-                margin: 10px 0; /* Adjust margin */
-            }
-
-            header h1 {
-                font-size: 20px; /* Smaller header font on mobile */
-            }
-
-            header nav a {
-                font-size: 16px; /* Smaller nav font on mobile */
-                margin-left: 10px; /* Adjust margin */
-            }
-        }
-
-        /* Hide "Services" on mobile */
-@media (max-width: 768px) {
-    .services-link {
-        display: none;
-    }
-}
-
-/* Show "Services" on desktop */
-@media (min-width: 768px) {
-    .services-link {
-        display: block;
-    }
-}
 
         /* Fade-in animation */
         .fade-in {
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Contact Section */
+        .contact {
+            background-color: #1f1f1f;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact h2 {
+            font-size: 32px;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #333;
+            border: 1px solid #555;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            background-color: #ff6b6b;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #e64a4a;
+        }
+
     </style>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 
 <body>
     <header>
-    <h1>Salon Booster</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li>
-                <a href="https://wa.me/918302273249" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width: 25px; height: 25px;">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/salonbooster/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" style="width: 25px; height: 25px;">
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
+        <h1>Salon Booster</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+           <a href="https://www.instagram.com/salonbooster/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/+918302273249" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </header>
 
     <section class="hero">
         <h2>Boost Your Salon’s Online Presence</h2>
@@ -337,105 +276,103 @@ header h1 {
                 <p>Let us handle your social media accounts and grow your online presence.</p>
                 <button class="btn-service" id="pay-social-media">Grow Your Social Media (₹2,000/month)</button>
             </div>
-            <div class="service-item fade-in" id="service3">
-    <img src="https://adbud.io/wp-content/uploads/2024/03/Skarmavbild-2024-03-19-kl.-15.52.32.png" alt="Meta Ads">
-    <h3>Meta Ads</h3>
-    <p>Boost your salon's visibility with our targeted advertising packages.</p>
-    <button class="btn-meta" id="pay-meta-mini">Mini Meta Ads Pack (₹15,000)</button>
-    <button class="btn-meta" id="pay-meta-mega">Mega Meta Ads Pack (₹50,000)</button>
-    <p>Benefits of Mini Pack: Reach 200K(2 lakh) people. Benefits of Mega Pack: Reach 800K(8 lakh) people.</p>
-</div>
+            <div class="service-item" id="service3">
+                <img src="https://adbud.io/wp-content/uploads/2024/03/Skarmavbild-2024-03-19-kl.-15.52.32.png" alt="Meta Ads">
 
-
+                <h3>Meta Ads</h3>
+                <p>Get the best ROI on your Meta (Facebook & Instagram) ads with our expert management.</p>
+                <button class="btn-meta" id="pay-meta-mini">₹15,000 Package</button>
+                <button class="btn-meta" id="pay-meta-mega">₹50,000 Package</button>
+            </div>
         </div>
-    
-
-
-    <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>For immediate assistance, call us at: +91 8302273249</p>
-        <form action="https://formspree.io/f/myzyyjel" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="_replyto" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Salon Booster. All rights reserved.</p>
-    </footer>
+
+ <!-- Updated Contact Section with Formspree -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>For immediate assistance, call us at: +91 8302273249</p>
+    <form class="contact-form" action="https://formspree.io/f/myzyyjel" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <!-- Hidden input to specify subject of the email -->
+        <input type="hidden" name="_subject" value="New contact form submission!">
+        <input type="text" name="_gotcha" style="display:none"> <!-- Hidden field to prevent spam -->
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
 
     <script>
-        var options = {
-            "key": "rzp_test_rUS1Z1D49a0hRh",
-            "name": "Salon Booster",
-            "description": "Payment for services",
-            "image": "https://example.com/logo.png",
-           "handler": function (response) {
-    // Redirect to success page after payment is successful
-    window.location.href = "payment-success.html?payment_id=" + response.razorpay_payment_id;
-}
-
-            "theme": {
-                "color": "#ff6b6b"
-            }
-        };
-
-        // Service Payment Functions
-        function setupServiceAnimations() {
+        document.addEventListener('DOMContentLoaded', function () {
             const serviceItems = document.querySelectorAll('.service-item');
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
 
-            const callback = (entries) => {
+            const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('fade-in');
                     }
                 });
+            }, { threshold: 0.5 });
+
+            serviceItems.forEach(item => {
+                observer.observe(item);
+            });
+
+            // Razorpay integration for each button
+            var options = {
+                "key": "your_razorpay_key", // Replace with your Razorpay key
+                "name": "Salon Booster",
+                "description": "Payment for services",
+                "image": "https://your-logo-url-here.com/logo.png",
+                "handler": function (response) {
+                    alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
+                },
+                "prefill": {
+                    "name": "",
+                    "email": ""
+                },
+                "theme": {
+                    "color": "#ff6b6b"
+                }
             };
 
-            const observer = new IntersectionObserver(callback, options);
-            serviceItems.forEach(item => observer.observe(item));
-        }
+            document.getElementById('pay-website').onclick = function (e) {
+                options.amount = "1000000"; // ₹10,000 in paise
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+                e.preventDefault();
+            }
 
-        setupServiceAnimations();
+            document.getElementById('pay-social-media').onclick = function (e) {
+                options.amount = "200000"; // ₹2,000 in paise
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+                e.preventDefault();
+            }
 
-        // Website Design Payment
-        document.getElementById('pay-website').onclick = function (e) {
-            options.amount = "1000000"; // ₹10,000 in paise (10000 * 100)
-            var rzp1 = new Razorpay(options);
-            rzp1.open();
-            e.preventDefault();
-        }
+            document.getElementById('pay-meta-mini').onclick = function (e) {
+                options.amount = "1500000"; // ₹15,000 in paise
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+                e.preventDefault();
+            }
 
-        // Social Media Management Payment
-        document.getElementById('pay-social-media').onclick = function (e) {
-            options.amount = "200000"; // ₹2,000 in paise (2000 * 100)
-            var rzp1 = new Razorpay(options);
-            rzp1.open();
-            e.preventDefault();
-        }
-
-        // Mini Meta Ads Pack Payment
-        document.getElementById('pay-meta-mini').onclick = function (e) {
-            options.amount = "1500000"; // ₹15,000 in paise (15000 * 100)
-            var rzp1 = new Razorpay(options);
-            rzp1.open();
-            e.preventDefault();
-        }
-
-        // Mega Meta Ads Pack Payment
-        document.getElementById('pay-meta-mega').onclick = function (e) {
-            options.amount = "5000000"; // ₹50,000 in paise (50000 * 100)
-            var rzp1 = new Razorpay(options);
-            rzp1.open();
-            e.preventDefault();
-        }
+            document.getElementById('pay-meta-mega').onclick = function (e) {
+                options.amount = "5000000"; // ₹50,000 in paise
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+                e.preventDefault();
+            }
+        });
     </script>
 </body>
 
