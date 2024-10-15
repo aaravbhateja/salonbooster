@@ -16,41 +16,42 @@
         }
 
         header {
-            background-color: #1f1f1f;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-        }
+    background-color: #333; /* Background color for the header */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding around the header */
+    display: flex; /* Flexbox for header alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+}
 
-        header h1 {
-            font-size: 24px;
-            color: #ff6b6b;
-        }
+nav ul {
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+    display: flex; /* Flexbox for horizontal alignment */
+    margin: 0; /* No margin */
+}
 
-        header nav {
-            display: flex;
-            align-items: center;
-        }
+nav ul li {
+    margin-left: 20px; /* Space between items */
+}
 
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+}
 
-        header nav a:hover {
-            color: #ff6b6b;
-        }
+header h1 {
+    font-size: 24px; /* Adjust header font size */
+    color: #ff6b6b; /* Header color */
+}
 
-        .header-icons img {
-            width: 25px;
-            height: 25px;
-            margin-left: 15px;
-            cursor: pointer;
-        }
+.header-icons img {
+    width: 25px; /* Icon width */
+    height: 25px; /* Icon height */
+    margin-left: 15px; /* Space between icons */
+    cursor: pointer; /* Pointer cursor */
+}
+
 
         /* Hero Section */
         .hero {
