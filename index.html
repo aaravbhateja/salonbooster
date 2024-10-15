@@ -372,9 +372,11 @@ header h1 {
             "name": "Salon Booster",
             "description": "Payment for services",
             "image": "https://example.com/logo.png",
-            "handler": function (response) {
-                alert("Payment successful! Payment ID: " + response.razorpay_payment_id);
-            },
+           "handler": function (response) {
+    // Redirect to success page after payment is successful
+    window.location.href = "payment-success.html?payment_id=" + response.razorpay_payment_id;
+}
+
             "theme": {
                 "color": "#ff6b6b"
             }
