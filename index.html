@@ -256,6 +256,20 @@
             }
         }
 
+        /* Hide "Services" on mobile */
+@media (max-width: 768px) {
+    .services-link {
+        display: none;
+    }
+}
+
+/* Show "Services" on desktop */
+@media (min-width: 768px) {
+    .services-link {
+        display: block;
+    }
+}
+
         /* Fade-in animation */
         .fade-in {
             opacity: 1;
@@ -268,19 +282,24 @@
 <body>
     <header>
         <h1>Salon Booster</h1>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact Us</a>
-            <a href="#about">About</a>
-            <div class="header-icons">
-                <a href="https://api.whatsapp.com/send?phone=8302273249" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
-                </a>
-                <a href="https://www.instagram.com/salonbooster" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram">
-                </a>
-            </div>
-        </nav>
+       <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li class="services-link"><a href="#services">Services</a></li> <!-- Added class here -->
+        <li><a href="#contact">Contact Us</a></li>
+        <li>
+            <a href="https://wa.me/918302273249" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width: 25px; height: 25px;">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/salonbooster/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" style="width: 25px; height: 25px;">
+            </a>
+        </li>
+    </ul>
+</nav>
+
     </header>
 
     <section class="hero">
